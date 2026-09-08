@@ -1,0 +1,29 @@
+name: Daily AI security digest
+
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch feed
+        run: python scripts/fetch_feed.py
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "feed: add daily AI security digest"
+          commit_user_name: "Saba Siddique"
+          commit_user_email: "103187876+sabasiddique1@users.noreply.github.com"
+          commit_author: "Saba Siddique <103187876+sabasiddique1@users.noreply.github.com>"
