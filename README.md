@@ -4,10 +4,11 @@
 
 A daily digest of what is happening in AI security, agentic AI, alignment, foundation models and medical AI — new CVEs plus fresh arXiv papers from leading researchers. Updated automatically every morning by GitHub Actions.
 
-**Latest:** [2026-09-13](feed/2026-09-13.md)
+**Latest:** [2026-09-14](feed/2026-09-14.md)
 
 ## Recent digests
 
+- [2026-09-14](feed/2026-09-14.md)
 - [2026-09-13](feed/2026-09-13.md)
 - [2026-09-12](feed/2026-09-12.md)
 - [2026-09-11](feed/2026-09-11.md)
